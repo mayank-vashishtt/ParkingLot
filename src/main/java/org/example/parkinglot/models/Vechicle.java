@@ -1,9 +1,31 @@
-package org.example.parkinglot.models;
+package org.example.models;
 
-public class Vechicle {
-    private int id;
-    private int number;
-    private VechicleType type;;
-    private User owner;
+public class Vehicle extends BaseModel {
+    private String number;
+    private VehicleType vehicleType;
+    private String ownerName;
 
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public VehicleType getVehicleType() {
+        return vehicleType;
+    }
+
+    public void setVehicleType(VehicleType vehicleType) {
+        this.vehicleType = vehicleType;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
 }

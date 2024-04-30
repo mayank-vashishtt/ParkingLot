@@ -1,25 +1,33 @@
-package org.example.parkinglot.models;
+package org.example.models;
 
+import java.util.List;
 
-import lombok.Getter;
-import lombok.Setter;
-
-import java.util.*;
-
-
-@Getter
-@Setter
-
-public class ParkingFloor {
-
-    private int floorId;
-    private int floorNumber;
+public class ParkingFloor extends BaseModel {
     private List<ParkingSpot> parkingSpots;
-    private Status status;
+    private int floorNumber;
+    private ParkingFloorStatus parkingFloorStatus;
 
+    public ParkingFloorStatus getParkingFloorStatus() {
+        return parkingFloorStatus;
+    }
 
+    public void setParkingFloorStatus(ParkingFloorStatus parkingFloorStatus) {
+        this.parkingFloorStatus = parkingFloorStatus;
+    }
 
+    public List<ParkingSpot> getParkingSpots() {
+        return parkingSpots;
+    }
 
+    public void setParkingSpots(List<ParkingSpot> parkingSpots) {
+        this.parkingSpots = parkingSpots;
+    }
 
+    public int getFloorNumber() {
+        return floorNumber;
+    }
 
-}
+    public void setFloorNumber(int floorNumber) {
+        this.floorNumber = floorNumber;
+    }
+}Fl

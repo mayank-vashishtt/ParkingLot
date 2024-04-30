@@ -1,18 +1,42 @@
-package org.example.parkinglot.models;
-
-import lombok.Getter;
-import lombok.Setter;
+package org.example.models;
 
 import java.util.List;
 
-@Getter
-@Setter
-
-public class ParkingLot {
-
-    private int id;
-    private List<ParkingFloor> parkingFloorList;
+public class ParkingLot extends BaseModel {
+    private List<ParkingFloor> parkingFloors;
     private List<Gate> gates;
-    private Status status;
+    private List<VehicleType> vehicleTypes;
+    private ParkingLotStatus parkingLotStatus;
 
+    public List<ParkingFloor> getParkingFloors() {
+        return parkingFloors;
+    }
+
+    public void setParkingFloors(List<ParkingFloor> parkingFloors) {
+        this.parkingFloors = parkingFloors;
+    }
+
+    public List<Gate> getGates() {
+        return gates;
+    }
+
+    public void setGates(List<Gate> gates) {
+        this.gates = gates;
+    }
+
+    public List<VehicleType> getVehicleTypes() {
+        return vehicleTypes;
+    }
+
+    public void setVehicleTypes(List<VehicleType> vehicleTypes) {
+        this.vehicleTypes = vehicleTypes;
+    }
+
+    public ParkingLotStatus getParkingLotStatus() {
+        return parkingLotStatus;
+    }
+
+    public void setParkingLotStatus(ParkingLotStatus parkingLotStatus) {
+        this.parkingLotStatus = parkingLotStatus;
+    }
 }

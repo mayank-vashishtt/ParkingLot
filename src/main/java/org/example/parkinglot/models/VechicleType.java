@@ -2,5 +2,5 @@ package org.example.parkinglot.models;
 
 public enum VechicleType {
     TWO_WHEELER,
-    CAR
+    FOUR_WHEELER
 }
